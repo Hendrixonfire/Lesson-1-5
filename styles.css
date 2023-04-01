@@ -1,0 +1,348 @@
+ body {
+    background-color: rgb(43, 41, 41);
+    margin: 0px;
+    overflow-y: hidden;
+    
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+
+.header{
+  text-align: center;
+  font-size: 2rem;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+
+
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+
+
+}
+
+nav ul li a:hover{
+ color:rgb(0, 153, 255) ;
+ transition: .3s;
+
+
+}
+.contacts-link {
+  color:white;
+  font-family: "Ibarra reeal Nov",  serif;
+  left: 0px;
+  top: 0px;
+ 
+
+}
+.guess_form {
+    position:absolute;
+    margin-left: clamp(4rem,  20vw,   48rem);
+    top:16%;
+    /*
+    left:38vh; */
+    display:  flex;
+    align-items:center;
+    color:rgb(0, 153, 255);
+    font-size:  clamp(3rem,  8vw,  8rem);
+    font-family: "Ibarra reeal Nov",  serif;
+    overflow-x: hidden;
+    z-index: 1;
+
+}
+
+
+.middle {
+  position:absolute;
+  /*top:18%;
+  left:61.5%; 
+  transform: translate(-50%,  -50%);  */
+  bottom:90px;
+  right: 0px;
+ /* border:2px  solid #fa81f4;  */
+  width:100%;
+  z-index: 1;
+
+
+}
+.button{
+  display: flex;
+  justify-content: center;
+  background: none;
+
+  border: 2px solid #131212;
+  
+  font-family: "Ibarra reeal Nov",  serif;
+  text-transform: uppercase; 
+  padding: 10px 50%;
+  cursor: pointer;
+  transition: color 0.4 linear;
+  color: rgb(255, 255, 255);
+  align-items: center;
+
+  
+
+
+}
+.button:hover {
+color:rgb(0, 153, 255);
+}
+
+.button::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  background: rgb(254, 255, 255);
+  transform-origin:  0 0;
+  transition-timing-function:  cubic-bezier(0.5,1.6,0.4,0.7);
+ 
+  z-index: -2;
+  transition: transform 0.5s;
+}
+
+.button1::before{
+  transform:  scalex(0);
+
+}
+.button1:hover::before{
+  transform:  scalex(1);
+}
+.menu-item  {
+    color:white;
+    font-size:  clamp(2rem,  8vw,  8rem);
+    font-family: "Ibarra reeal Nov",  serif;
+    /* display:  block; */
+    text-decoration:none;
+    /*
+    padding:  clamp(0.25rem, 0.5vw,  1rem) 0rem; */
+    opacity: 0.1;
+    max-width: 60rem;
+} 
+
+.menu-items {
+    margin-left: clamp(4rem,  20vw,   38rem);
+    position: absolute;
+    top:30vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.menu-item-mobile{
+  display: none;
+  font-size:  clamp(2rem,  8vw,  8rem);
+  opacity:0.1;
+}
+
+.menu-items:hover >  .menu-item:hover  {
+  opacity:  1;
+}
+.menu-items:hover >  .menu-item-mobile:hover  {
+  opacity:  1;
+}
+#menu-background-pattern  {
+    height:100%;
+    width:100%;
+    background-image: radial-gradient(rgba(245, 241, 244, 0.1)  9%, transparent  9%);
+    background-position:  0%  0%;
+    background-size: 12vmin 12vmin;  
+    position:absolute;
+    left:  0px;
+    top: 0px;
+    z-index:  -1;
+   
+    transition:  opacity  800ms ease,
+    background-size 800ms ease;  
+}
+
+.menu-items:hover ~ #menu-background-pattern{
+    height:100%;
+    width:100%;
+    background-image: radial-gradient(rgba(0, 153, 255, 0.1)  8%, transparent 8%);
+    background-position: 0%  0%;
+    background-size: 12vmin 12vmin;
+    position:  absolute;
+    left:  0px;
+    top: 0px;
+    z-index:  2;
+}  
+
+.hide {
+  display: none;
+}
+  
+.menu-items:hover  ~ .hide  {
+ 
+    
+   /* color:white;*/
+   background: -webkit-linear-gradient(#fa81f4, #012f92);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    font-size:  clamp(3rem,  4vw,  4rem);
+    font-family: "Ibarra reeal Nov",  serif;
+    display:  none;
+    text-decoration:none;
+    /*
+    padding:  clamp(0.25rem, 0.5vw,  1rem) 0rem;*/
+    opacity: 1;
+  
+  }
+
+  a:link { text-decoration: none; }
+
+  .footer{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ggg-logo{
+   
+   object-fit: contain;
+   opacity: 0.5;
+
+  }
+  .ggg-logo:hover{
+    opacity: 1;
+  }
+ /*
+  .age-text  {
+    color:white;
+    font-size:  clamp(3rem,  8vw,  8rem);
+    font-family: "Ibarra reeal Nov",  serif;
+    display:  flex;
+    text-decoration:none;
+    /* padding:  clamp(0.25rem,  1rem) 0rem;*/
+    /*
+    opacity: 1;
+    position:  relative;
+    left:  1000px;
+    bottom: 830px;
+  }
+  .town-text  {
+    color:white;
+    font-size:  clamp(3rem,  8vw,  8rem);
+    font-family: "Ibarra reeal Nov",  serif;
+   /* font-style: italic;  */
+   /*
+    display:  flex;
+    text-decoration:none;
+    opacity: 1;
+    padding: /*  clamp(0.25rem, 0.5vw,  1rem) */ /* 180px 100px 20px;
+    position:  relative;
+    left:  1000px;
+    bottom: 830px;
+    right: 400px;
+  }
+  .hobbies-text  {
+    color:white;
+    font-size:  clamp(3rem,  8vw,  8rem);
+    font-family: "Ibarra reeal Nov",  serif;
+   /* font-style: italic;  */ /*
+    display:  flex;
+    text-decoration:none;
+    opacity: 1;
+    padding: /*  clamp(0.25rem, 0.5vw,  1rem) */  /* 180px 100px 20px;
+    position:  relative;
+    left:  1150px;
+    bottom: 1350px;
+    right: 400px;
+  }
+*/
+  @media screen and (max-width: 1920px){
+   
+    
+  }
+  @media screen and (max-width: 1240px){
+    .menu-item {
+    color: rgb(224, 240, 221);
+    display: none;
+    }
+    .menu-item-mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: rgb(233, 243, 240);
+    }
+    .ggg-logo{
+      display: none;
+    }
+  
+    .guess_form{
+      top:22%;
+      font-size:  clamp(2rem,  8vw,  8rem);
+  }
+  @media screen and (max-width: 712px){
+    .button{
+      display: flex;
+      justify-content: center;
+      background: none;
+    
+      border: 1px solid #131212;
+      
+      font-family: "Ibarra reeal Nov",  serif;
+      text-transform: uppercase; 
+      padding: 10px 44%;
+      cursor: pointer;
+      transition: color 0.4 linear;
+      color: rgb(255, 255, 255);
+      align-items: center;
+    
+    }
+    .middle {
+     
+      bottom:19px;
+      
+    
+    
+    }
+  @media screen and (max-width: 375px){
+    .button{
+      display: flex;
+      justify-content: center;
+      background: none;
+    
+      border: 1px solid #131212;
+      
+      font-family: "Ibarra reeal Nov",  serif;
+      text-transform: uppercase; 
+      padding: 10px 38%;
+      cursor: pointer;
+      transition: color 0.4 linear;
+      color: rgb(255, 255, 255);
+      align-items: center;
+    
+    }
+    .middle {
+     
+      bottom:19px;
+    }
+    .guess_form{
+        top:24%;
+        font-size: 1.025em;
+    }
+    
+    }
+    
+  }
+  }

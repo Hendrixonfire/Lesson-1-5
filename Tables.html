@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="Tables.css" />  
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a  href="index.html" class="back-link"><i class="fa-solid fa-house"></i></a>
+        <h1 class="contacts-title">Tables:</h1>
+    </header>
+    
+    <div  class="List">
+        <ol class="Phonelist">
+           <li>Java разработчик:
+             <ul>
+            <li>43 945 руб</li>
+            <li>5.5 месяцев</li>
+            <li>30 марта</li>
+            </li>
+           </ul>
+           <li>Автоматизированное тестирование: <ul>
+            <li>31 960 руб.</li>
+            <li>4 месяцев</li>
+            <li>30 марта</li></ul></li>
+           <li>Android(мобильная рарзработка): <ul>
+            <li>35 955 руб.</li>
+            <li>4.5 месяцев</li>
+            <li>30 марта</li></li>
+        </ol>
+        <!---
+        <h1 class="Section-title">Phone  number:</h1>
+  
+            <p><i class="fa-sharp fa-solid fa-square-phone"></i> 8 (495) 477-43-05
+            </p>
+        -->
+    </div>
+    <div  class="avenue">
+        <table  class="avenuetable">
+          
+          <thead>
+              <tr>
+                  <th>Название</th>
+                  <th>Цена</th>
+                  <th>Длительность</th>
+                  <th>Начало</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td data-title="Year">Java разработчик:</td>
+                  <td data-title="Gold">43 945 руб</td>
+                  <td data-title="Silver">5.5 месяцев</td>
+                  <td data-title="Silver" rowspan="2">30 марта</td>
+              </tr>
+              <tr>
+                  <td>Автоматизированное тестирование:</td>
+                  <td>31 960 руб</td>
+                  <td>4 месяцев</td>
+                  
+              </tr>
+              <tr>
+                  <td colspan="2">Android(мобильная рарзработка): </td>
+                  <td>35 955 руб</td>
+                  <td>4.5 месяцев</td>
+                 
+              </tr>
+          </tbody>
+        </table>
+</body>
+</html>
